@@ -1,0 +1,49 @@
+body{
+    background: #1f242d;;
+}
+
+#game {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  padding-top: 50px;
+  margin: 20px auto;
+}
+
+p{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #f0f0f0;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+.cell:hover {
+  background: #e0e0e0;
+}
+
+.buttons{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #aaa;
+}
+
+button{
+    border-radius: 10%;
+    font-size: 1rem;
+    margin: 0% auto;
+}
