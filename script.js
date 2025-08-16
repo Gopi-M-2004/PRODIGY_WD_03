@@ -17,7 +17,7 @@ const winConditions = [
 // Handle cell click
 function cellClicked() {
   const cellIndex = this.dataset.index;
-  if (board[cellIndex] !== "" || !running) return;
+  if (board[cellIndex] !== "" || !running || (aiMode && currentPlayer === "O") ) return;
 
   board[cellIndex] = currentPlayer;
   this.textContent = currentPlayer;
@@ -141,3 +141,4 @@ modeBtn.addEventListener('click', toggleMode);
 
 statusText.textContent = `${currentPlayer}'s turn`;
 modeBtn.textContent = "Mode: Multiplayer";
+
